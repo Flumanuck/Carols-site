@@ -1,13 +1,161 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* App CSS Begins here */
+.main {
+  display: flex;
+}
+/* App CSS Ends here */
+
+/* Navbar CSS Begins here */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee3cb;
+}
+
+.name {
+  text-decoration: none;
+  color: #808c95;
+  font-size: 2.6rem;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.name:hover {
+  color: #1a374d;
+}
+
+.contact-links,
+.site-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  list-style-type: none;
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: #406882;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.contact-links a:hover {
+  color: #1a374d;
+}
+
+/* Navbar CSS ends here */
+
+/* Profile CSS starts here */
+
+.full-profile {
+  width: 35%;
+  border: 4px solid #1a374d;
+  background-color: #406882;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.full-profile img {
+  width: 70%;
+  margin-top: 2%;
+  border: 11px solid rgb(70, 48, 24);
+  height: 50%;
+}
+
+.profile-content {
+  width: 90%;
+  margin: 2% 0;
+  border: 2px solid #1a374d;
+  padding: 2%;
+  background-color: #d7c0ae;
+}
+
+.profile-content h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.profile-content p {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #1a374d;
+}
+
+/* Profile CSS ends here */
+
+/* Body CSS starts here */
+
+.main-body {
+  width: 65%;
+  background-color: #4b9fe0;
+  border: 4px solid #1a374d;
+  border-left: none;
+  border-bottom: none;
+}
+
+.site-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-body img {
+  width: 85%;
+  height: 30vw;
+  opacity: 0.8;
+  transition: 0.3s;
+  border: 5px solid #1a374d;
+}
+
+.main-body img:hover {
+  opacity: 1;
+}
+
+.site-space {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-links {
+  width: 90%;
+}
+
+.site-links button {
+  background-color: #d7c0ae;
+  color: rgb(37, 38, 39);
+  border-radius: 12px;
+}
+
+.site-description {
+  width: 95%;
+  margin-top: 2%;
+  background-color: #5a93b9;
+  border: 2px solid #1a374d;
+  padding: 1%;
+  text-align: center;
+}
+
+.site-description p {
+  font-size: 2rem;
+}
+
+.site-space h2 {
+  font-size: 3rem;
+  font-style: italic;
+  color: #224864;
+  text-shadow: black;
+}
+
+.bottom {
+  background-color: #4b9fe0;
+  height: 30vh;
 }
